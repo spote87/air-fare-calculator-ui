@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en" ng-app="travelPriceEngineApp">
+<head>
+    <meta charset="utf-8">
+    <title>Travel Pricing Engine</title>
+    <link rel="stylesheet" href="dist/app/css/style.min.css"/>
+</head>
+<body>
+<div ng-cloak ng-include="'app/travelPriceEngineApp-index.html'"></div>
+
+<script src="dist/lib/angular/angular.min.js"></script>
+<script src="dist/lib//angular-route/angular-route.min.js"></script>
+<script src="dist/lib/ui-select/dist/select.min.js"></script>
+<script src="dist/lib/angular-sanitize/angular-sanitize.min.js"></script>
+<script src="dist/lib/angular-resource/angular-resource.min.js"></script>
+<script src="dist/lib/ng-table/bundles/ng-table.min.js"></script>
+
+
+<script src="dist/app/app.min.js"></script>
+
+<!--load mock here -->
+<script src="dist/lib/angular-mocks/angular-mocks.js"></script>
+<script src="/dist/mocks/mockConfig.js"></script>
+<script src="/dist/mocks/mockData.js"></script>
+
+<script type="text/javascript">
+    angular.module('travelPriceEngineApp').requires.push('travelPriceEngineAppMock');
+
+</script>
+
+</body>
+</html>
