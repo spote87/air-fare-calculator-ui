@@ -83,7 +83,7 @@ module.exports = function (grunt) {
         },
         open: {
             dev: {
-                path: 'http://localhost:9000',
+                path: 'http://localhost:8000',
                 app: 'Google Chrome',
             }
         },
